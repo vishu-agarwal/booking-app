@@ -1,5 +1,5 @@
 
-# [Booking App](https://booking-app-rust.vercel.app/)
+# [Booking App](https://booking-room-app.netlify.app/)
 
 ## Description
 
