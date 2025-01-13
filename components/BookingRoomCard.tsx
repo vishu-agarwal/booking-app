@@ -49,7 +49,7 @@ export const BookingRoomCard: FC<IBookingRoomCardProps> = ({ booking }) => {
             <div className="flex justify-center md:justify-end gap-2 md:gap-4">
                 <Link href={`/bookings/${booking.$id}`} passHref>
                     <button
-                        className="bg-cyan-500 text-white px-4 py-2 rounded-md hover:bg-cyan-600"
+                        className="bg-lime-500 text-white px-4 py-2 rounded-md hover:bg-lime-600"
                     >
                         View
                     </button>

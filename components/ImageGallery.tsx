@@ -33,7 +33,7 @@ const ImageGallery: FC<ImageGalleryProps> = ({ images, id, name }) => {
               <h3 className="text-2xl font-semibold line-clamp-1 mb-2">{name}</h3>
               <Link href={`/rooms/${id}`} passHref>
                 <button
-                  className="bg-cyan-700 text-white px-4 py-2 rounded-md hover:bg-cyan-600 transition-colors duration-300"
+                  className="bg-lime-700 text-white px-4 py-2 rounded-md hover:bg-lime-600 transition-colors duration-300"
                 >
                   View Room
                 </button>

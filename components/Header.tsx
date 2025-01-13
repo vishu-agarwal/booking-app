@@ -55,10 +55,10 @@ const Header: React.FC<HeaderProps> = ({ title = "Booking Rooms" }) => {
     ];
 
   return (
-    <header className="bg-gradient-to-r from-cyan-600 to-cyan-900 text-white shadow-lg">
+    <header className="bg-gradient-to-r from-lime-600 to-lime-900 text-white shadow-lg">
       <div className="px-6 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-3">
-          <Link href={"/"} className="flex items-center space-x-2 text-lg hover:text-cyan-100 transition duration-300">
+          <Link href={"/"} className="flex items-center space-x-2 text-lg hover:text-lime-100 transition duration-300">
             <Image src={logo} alt={title} className="w-12 h-12 rounded-full" />
           </Link>
         </div>
@@ -91,7 +91,7 @@ const Header: React.FC<HeaderProps> = ({ title = "Booking Rooms" }) => {
         </div>
       </div>
 
-      <div className="md:hidden bg-cyan-800 py-4">
+      <div className="md:hidden bg-lime-800 py-4">
         <ul className="space-y-4 px-4">
           {navItems.map((item, index) =>
             item.show !== false ? (

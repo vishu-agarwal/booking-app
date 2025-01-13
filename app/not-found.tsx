@@ -10,7 +10,7 @@ const NotFound = () => {
                     {"Sorry, the page you're looking for doesn't exist. It might have been moved or deleted."}
                 </p>
                 <Link href="/" passHref>
-                    <button className="py-2 px-6 bg-cyan-600 text-white rounded-md hover:bg-cyan-700 transition duration-300">
+                    <button className="py-2 px-6 bg-lime-600 text-white rounded-md hover:bg-lime-700 transition duration-300">
                         Go to Home
                     </button>
                 </Link>

@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Booking Room App",
+  title: "Booking Room",
   description: "Book meeting or conference rooms for team meetings.",
 };
 

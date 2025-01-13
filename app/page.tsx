@@ -9,14 +9,14 @@ const DashboardPage: React.FC = () => {
     <div className="min-h-screen bg-gray-50 p-6">
       {/* Header Section */}
       <header className="text-center mb-12">
-        <h1 className="text-4xl sm:text-5xl font-bold text-cyan-600 transition-all duration-500 ease-in-out hover:text-cyan-800">
+        <h1 className="text-4xl sm:text-5xl font-bold text-lime-600 transition-all duration-500 ease-in-out hover:text-lime-800">
           Welcome to the Meeting Room Booking Platform
         </h1>
         <p className="mt-4 text-lg sm:text-xl text-gray-700 transition-all duration-500 ease-in-out hover:text-gray-800">
           Book meeting or conference rooms for team meetings and enhance your team&apos;s collaboration!
         </p>
         <Link href={`/rooms`} passHref>
-          <button className="mt-6 bg-cyan-600 text-white py-3 px-8 rounded-full text-lg sm:text-xl transition-all duration-500 ease-in-out hover:bg-cyan-700">
+          <button className="mt-6 bg-lime-600 text-white py-3 px-8 rounded-full text-lg sm:text-xl transition-all duration-500 ease-in-out hover:bg-lime-700">
             Get Started
           </button>
         </Link>
@@ -24,14 +24,14 @@ const DashboardPage: React.FC = () => {
 
       {/* Carousel Section */}
       <section className="mb-12">
-        <h2 className="text-2xl sm:text-3xl font-semibold text-cyan-600 mb-6 text-center">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-lime-600 mb-6 text-center">
           Explore Our Meeting Rooms
         </h2>
         <Carousel />
       </section>
 
       {/* Customer Attraction Section */}
-      <section className="bg-cyan-600 p-8 rounded-lg shadow-lg mb-12">
+      <section className="bg-lime-600 p-8 rounded-lg shadow-lg mb-12">
         <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-6 text-center">
           Why Choose Our Platform?
         </h2>
@@ -56,24 +56,24 @@ const DashboardPage: React.FC = () => {
 
       {/* Features Section */}
       <section className="bg-white p-8 rounded-lg shadow-lg mb-12">
-        <h2 className="text-2xl sm:text-3xl font-semibold text-cyan-600 mb-6 text-center">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-lime-600 mb-6 text-center">
           Key Features
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:bg-cyan-50 transition-all duration-500 ease-in-out">
-            <h3 className="text-xl font-semibold text-cyan-600">Easy Booking</h3>
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:bg-lime-50 transition-all duration-500 ease-in-out">
+            <h3 className="text-xl font-semibold text-lime-600">Easy Booking</h3>
             <p className="text-gray-700 mt-2">
               Quickly reserve meeting rooms with our user-friendly platform. No more hassle, just a few clicks!
             </p>
           </div>
-          <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:bg-cyan-50 transition-all duration-500 ease-in-out">
-            <h3 className="text-xl font-semibold text-cyan-600">Real-time Availability</h3>
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:bg-lime-50 transition-all duration-500 ease-in-out">
+            <h3 className="text-xl font-semibold text-lime-600">Real-time Availability</h3>
             <p className="text-gray-700 mt-2">
               See available rooms in real-time, ensuring you book a space that&apos;s free when you need it.
             </p>
           </div>
-          <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:bg-cyan-50 transition-all duration-500 ease-in-out">
-            <h3 className="text-xl font-semibold text-cyan-600">Multiple Room Options</h3>
+          <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:bg-lime-50 transition-all duration-500 ease-in-out">
+            <h3 className="text-xl font-semibold text-lime-600">Multiple Room Options</h3>
             <p className="text-gray-700 mt-2">
               Choose from various room sizes and setups to meet your specific needs.
             </p>
@@ -82,7 +82,7 @@ const DashboardPage: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-cyan-600 p-8 text-center text-white rounded-lg shadow-lg mb-12">
+      <section className="bg-lime-600 p-8 text-center text-white rounded-lg shadow-lg mb-12">
         <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
           Ready to Book Your Room?
         </h2>
@@ -90,7 +90,7 @@ const DashboardPage: React.FC = () => {
           Get started today and take your team meetings to the next level. Book your room now!
         </p>
         <Link href={`/rooms`} passHref>
-          <button className="bg-white text-cyan-600 py-3 px-6 rounded-full text-lg sm:text-xl transition-all duration-500 ease-in-out hover:bg-gray-100">
+          <button className="bg-white text-lime-600 py-3 px-6 rounded-full text-lg sm:text-xl transition-all duration-500 ease-in-out hover:bg-gray-100">
             Book a Room Now
           </button>
         </Link>

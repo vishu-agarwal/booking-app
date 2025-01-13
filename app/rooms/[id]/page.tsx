@@ -7,6 +7,7 @@ import Link from "next/link";
 import RoomBookingLoader from "@/components/RoomBookingLoader";
 import { FaArrowLeft } from "react-icons/fa";
 import ImageGallery from "@/components/ImageGallery";
+import BackButton from "./_component/BackButton";
 
 type tParams = Promise<{ id: string }>;
 interface IViewRoomProps {
@@ -39,7 +40,7 @@ const ViewRoom: FC<IViewRoomProps> = async ({ params }) => {
                 </p>
                 <Link href="/rooms" passHref>
                     <button
-                        className="inline-flex items-center px-6 py-3 bg-cyan-600 text-white rounded-md shadow-md hover:bg-cyan-700 transition duration-300"
+                        className="inline-flex items-center px-6 py-3 bg-lime-600 text-white rounded-md shadow-md hover:bg-lime-700 transition duration-300"
                     >
                         <FaArrowLeft className="mr-2" />
                         Back to Rooms
@@ -52,7 +53,7 @@ const ViewRoom: FC<IViewRoomProps> = async ({ params }) => {
         const projectID = process.env.NEXT_PUBLIC_APPWRITE_PROJECT;
         const baseURL = process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT;
 
-    
+
         imageSRC = room.image?.map((image: string) => {
             const imageURL = `${baseURL}/storage/buckets/${bucketId}/files/${image}/view?project=${projectID}`;
             return imageURL;
@@ -62,14 +63,7 @@ const ViewRoom: FC<IViewRoomProps> = async ({ params }) => {
     return (
         <div className="max-w-screen-lg mx-auto px-4 pb-6">
             <Heading title={room.name} />
-            <Link href="/rooms" passHref>
-                <button
-                    className="mb-4 py-2 px-2 text-cyan-600 rounded-md hover:bg-cyan-100 transition duration-300 flex items-center gap-2"
-                >
-                    <FaArrowLeft />
-                    Back to Room
-                </button>
-            </Link>
+            <BackButton />
             <div className="flex flex-col lg:flex-row gap-6">
                 {/* <div className="flex-shrink-0">
                     <Image

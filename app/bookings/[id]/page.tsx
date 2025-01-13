@@ -30,10 +30,10 @@ const ViewBookingPage: FC<IViewBookingPageProps> = async ({ params }) => {
                         height={100}
                     />
                 </div>
-                <h1 className="text-3xl font-semibold text-cyan-600 mb-4">Booking Not Found</h1>
+                <h1 className="text-3xl font-semibold text-lime-600 mb-4">Booking Not Found</h1>
                 <p className="text-gray-600 mb-6">The booking you are looking for doesn&apos;t exist or has been removed.</p>
                 <Link href="/bookings">
-                    <button className="inline-flex items-center px-6 py-3 bg-cyan-600 text-white rounded-lg shadow-md hover:bg-cyan-700 transition duration-300">
+                    <button className="inline-flex items-center px-6 py-3 bg-lime-600 text-white rounded-lg shadow-md hover:bg-lime-700 transition duration-300">
                         <FaArrowLeft className="mr-2" />
                         Back to Bookings
                     </button>
@@ -60,7 +60,7 @@ const ViewBookingPage: FC<IViewBookingPageProps> = async ({ params }) => {
 
             <div className="flex items-center justify-between mb-2">
                 <Link href="/bookings">
-                    <button className="flex items-center text-cyan-600 hover:text-cyan-800 transition duration-300">
+                    <button className="flex items-center text-lime-600 hover:text-lime-800 transition duration-300">
                         <FaArrowLeft className="mr-2" />
                         Back to Bookings
                     </button>
@@ -83,7 +83,7 @@ const ViewBookingPage: FC<IViewBookingPageProps> = async ({ params }) => {
                         <h3 className="text-2xl font-semibold line-clamp-1 mb-2">{booking.room_id.name}</h3>
                         <Link href={`/rooms/${booking.room_id.$id}`} passHref>
                             <button
-                                className="bg-cyan-700 text-white px-4 py-2 rounded-md hover:bg-cyan-600 transition-colors duration-300"
+                                className="bg-lime-700 text-white px-4 py-2 rounded-md hover:bg-lime-600 transition-colors duration-300"
                             >
                                 View Room
                             </button>
@@ -94,7 +94,7 @@ const ViewBookingPage: FC<IViewBookingPageProps> = async ({ params }) => {
 
                 <div className="space-y-2">
                     <div className="bg-white shadow-lg rounded-xl p-4">
-                        <h3 className="text-lg font-semibold text-cyan-600 mb-2">Room Information</h3>
+                        <h3 className="text-lg font-semibold text-lime-600 mb-2">Room Information</h3>
                         <div className="space-y-1 text-gray-700">
                             <p><strong>Description:</strong> {booking.room_id.description}</p>
                             <p><strong>Amenities:</strong> {booking.room_id.amenities}</p>
@@ -105,7 +105,7 @@ const ViewBookingPage: FC<IViewBookingPageProps> = async ({ params }) => {
                         </div>
                     </div>
                     <div className="bg-white shadow-lg rounded-xl p-4">
-                        <h3 className="text-lg font-semibold text-cyan-600 mb-2">Booking Dates</h3>
+                        <h3 className="text-lg font-semibold text-lime-600 mb-2">Booking Dates</h3>
                         <div className="space-y-1 text-gray-700">
                             <p><strong>Check-in:</strong> {formateDate(booking.check_in)}</p>
                             <p><strong>Check-out:</strong> {formateDate(booking.check_out)}</p>

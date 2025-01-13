@@ -37,14 +37,14 @@ export const MyRoomCard: FC<IMyRoomCardProps> = ({ room }) => {
                 <p className="text-sm text-gray-500 line-clamp-1">
                     <span className="font-medium">Capacity:</span> {room.capacity}
                 </p>
-                <p className="text-lg text-cyan-600 font-bold mt-2 line-clamp-1">
+                <p className="text-lg text-lime-600 font-bold mt-2 line-clamp-1">
                     ${room.price_per_hour} / hour
                 </p>
             </div>
             <div className="flex justify-between items-center bg-gray-100 px-4 py-2">
                 <Link href={`/rooms/${room.$id}`} passHref>
                     <button
-                        className="bg-cyan-500 text-white px-4 py-2 rounded-md hover:bg-cyan-600"
+                        className="bg-lime-500 text-white px-4 py-2 rounded-md hover:bg-lime-600"
                     >
                         View
                     </button>

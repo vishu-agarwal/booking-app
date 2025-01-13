@@ -88,7 +88,7 @@ const AddRoom = () => {
                             id="name"
                             name="name"
                             placeholder="Enter the room name"
-                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500"
+                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime-500"
                             required
                         />
                     </div>
@@ -101,7 +101,7 @@ const AddRoom = () => {
                             id="description"
                             name="description"
                             placeholder="Provide a brief description"
-                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500"
+                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime-500"
                             required
                         />
                     </div>
@@ -111,7 +111,7 @@ const AddRoom = () => {
                             id="amenities"
                             name="amenities"
                             placeholder="Enter amenities"
-                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500"
+                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime-500"
                             required
                         />
                     </div>
@@ -125,7 +125,7 @@ const AddRoom = () => {
                             id="sqft"
                             name="sqft"
                             placeholder="Enter square footage"
-                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500"
+                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime-500"
                             required
                         />
                     </div>
@@ -136,7 +136,7 @@ const AddRoom = () => {
                             id="capacity"
                             name="capacity"
                             placeholder="Enter capacity"
-                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500"
+                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime-500"
                             required
                         />
                     </div>
@@ -147,7 +147,7 @@ const AddRoom = () => {
                             id="availability"
                             name="availability"
                             placeholder="Enter availability"
-                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500"
+                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime-500"
                             required
                         />
                     </div>
@@ -158,7 +158,7 @@ const AddRoom = () => {
                             id="price_per_hour"
                             name="price_per_hour"
                             placeholder="Enter price per hour"
-                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500"
+                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime-500"
                             required
                         />
                     </div>
@@ -172,7 +172,7 @@ const AddRoom = () => {
                             id="location"
                             name="location"
                             placeholder="Enter the location"
-                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500"
+                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime-500"
                             required
                         />
                     </div>
@@ -183,7 +183,7 @@ const AddRoom = () => {
                             id="address"
                             name="address"
                             placeholder="Enter the address"
-                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500"
+                            className="p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-lime-500"
                             required
                         />
                     </div>
@@ -194,7 +194,7 @@ const AddRoom = () => {
                     <label className="block text-gray-700 font-medium mb-2">Room Image</label>
                     <div className="flex flex-col md:flex-row space-x-2">
                         <div
-                            className={`border-2 border-dashed p-8 rounded-lg text-center ${isDragActive ? "border-cyan-500 bg-cyan-50" : "border-gray-300"}`}
+                            className={`border-2 border-dashed p-8 rounded-lg text-center ${isDragActive ? "border-lime-500 bg-lime-50" : "border-gray-300"}`}
                             onDragOver={handleDragOver}
                             onDragLeave={handleDragLeave}
                             onDrop={handleFileDrop}
@@ -243,7 +243,7 @@ const AddRoom = () => {
                 <div className="col-span-4 md:col-span-4 lg:col-span-4 flex justify-center">
                     <button
                         type="submit"
-                        className="w-full bg-cyan-600 text-white py-3 rounded-lg hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 flex items-center justify-center text-lg font-semibold"
+                        className="w-full bg-lime-600 text-white py-3 rounded-lg hover:bg-lime-700 focus:outline-none focus:ring-2 focus:ring-lime-500 flex items-center justify-center text-lg font-semibold"
                     >
                         <FaPlusCircle className="mr-2" />
                         Add Room

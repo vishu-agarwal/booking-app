@@ -49,7 +49,7 @@ const RoomCards: FC<IRoomCardsProps> = ({ room }) => {
                 </div>
                 <div className="mt-4">
                     <Link href={`/rooms/${room.$id}`} passHref>
-                        <button className="w-full py-2 px-4 bg-cyan-600 text-white rounded-md hover:bg-cyan-700 transition duration-300">
+                        <button className="w-full py-2 px-4 bg-lime-600 text-white rounded-md hover:bg-lime-700 transition duration-300">
                             View Details
                         </button>
                     </Link>

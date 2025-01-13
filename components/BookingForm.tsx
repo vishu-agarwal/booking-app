@@ -65,7 +65,7 @@ const BookingForm: FC<IBookingFormProps> = ({ roomId }) => {
                             type="date"
                             id="check_in_date"
                             name="check_in_date"
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-600 transition duration-300"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-600 transition duration-300"
                             required
                         />
                     </div>
@@ -77,7 +77,7 @@ const BookingForm: FC<IBookingFormProps> = ({ roomId }) => {
                             type="time"
                             id="check_in_time"
                             name="check_in_time"
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-600 transition duration-300"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-600 transition duration-300"
                             required
                         />
                     </div>
@@ -91,7 +91,7 @@ const BookingForm: FC<IBookingFormProps> = ({ roomId }) => {
                             type="date"
                             id="check_out_date"
                             name="check_out_date"
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-600 transition duration-300"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-600 transition duration-300"
                             required
                         />
                     </div>
@@ -104,7 +104,7 @@ const BookingForm: FC<IBookingFormProps> = ({ roomId }) => {
                             type="time"
                             id="check_out_time"
                             name="check_out_time"
-                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-600 transition duration-300"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-600 transition duration-300"
                             required
                         />
                     </div>
@@ -112,7 +112,7 @@ const BookingForm: FC<IBookingFormProps> = ({ roomId }) => {
                 <div className="mt-8">
                     <button
                         type="submit"
-                        className="w-full py-3 px-4 bg-cyan-600 text-white font-semibold rounded-md hover:bg-cyan-700 focus:outline-none focus:ring-4 focus:ring-cyan-300 transition duration-300"
+                        className="w-full py-3 px-4 bg-lime-600 text-white font-semibold rounded-md hover:bg-lime-700 focus:outline-none focus:ring-4 focus:ring-lime-300 transition duration-300"
                     >
                         Confirm Booking
                     </button>

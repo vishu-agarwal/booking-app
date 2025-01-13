@@ -26,10 +26,10 @@ export default async function Rooms() {
                         height={100}
                     />
                 </div>
-                <h1 className="text-3xl font-semibold text-cyan-600 mb-4">Rooms Not Available!</h1>
+                <h1 className="text-3xl font-semibold text-lime-600 mb-4">Rooms Not Available!</h1>
                 <Link href={"/rooms/add"} passHref >
                     <button
-                        className="inline-flex items-center px-6 py-3 bg-cyan-600 text-white rounded-md shadow-md hover:bg-cyan-700 transition duration-300"
+                        className="inline-flex items-center px-6 py-3 bg-lime-600 text-white rounded-md shadow-md hover:bg-lime-700 transition duration-300"
                     >
                         <FaPlus className="mr-2" />
                         Add Rooms
