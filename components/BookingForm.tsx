@@ -1,11 +1,14 @@
 'use client'
 
 import { FC, useState } from "react";
-import Heading from "./Heading";
-import { useRouter } from "next/navigation";
-import { bookRoom } from "@/app/actions/bookRoom";
 import { toast } from "react-toastify";
+
+import { useRouter } from "next/navigation";
+
+import Heading from "./Heading";
 import RoomBookingLoader from "./RoomBookingLoader";
+
+import { bookRoom } from "@/app/actions/bookRoom";
 
 interface IBookingFormProps {
     roomId: string;

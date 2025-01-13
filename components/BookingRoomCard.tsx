@@ -1,8 +1,11 @@
-import { BookingRoom } from "@/utils/types";
-import Image from "next/image";
 import { FC } from "react";
-import { DeleteRoomButton } from "./DeleteRoomButton";
+
 import Link from "next/link";
+import Image from "next/image";
+
+import { DeleteRoomButton } from "./DeleteRoomButton";
+
+import { BookingRoom } from "@/utils/types";
 import { formateDate } from "@/utils/helpers";
 
 interface IBookingRoomCardProps {

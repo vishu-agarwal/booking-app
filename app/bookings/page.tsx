@@ -1,12 +1,16 @@
-import { BookingRoom } from "@/utils/types";
-import getMyBookings from "../actions/getMyBookings";
+import React, { Suspense } from "react";
+import { FaArrowLeft } from "react-icons/fa";
+
+import Link from "next/link";
+import Image from "next/image";
+
 import Heading from "@/components/Heading";
 import { BookingRoomCard } from "@/components/BookingRoomCard";
-import React, { Suspense } from "react";
 import RoomBookingLoader from "@/components/RoomBookingLoader";
-import Image from "next/image";
-import Link from "next/link";
-import { FaArrowLeft } from "react-icons/fa";
+
+import getMyBookings from "../actions/getMyBookings";
+
+import { BookingRoom } from "@/utils/types";
 
 const BookingRoomPage = async () => {
     const bookings = await getMyBookings();

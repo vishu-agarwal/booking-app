@@ -1,12 +1,16 @@
-import getMyRooms from '@/app/actions/getMyRooms';
+import React, { Suspense } from 'react';
+import { FaPlus } from 'react-icons/fa';
+
+import Link from 'next/link';
+import Image from 'next/image';
+
 import Heading from '@/components/Heading';
 import { MyRoomCard } from '@/components/MyRoomCard';
 import RoomBookingLoader from '@/components/RoomBookingLoader';
+
+import getMyRooms from '@/app/actions/getMyRooms';
+
 import { RoomsType } from '@/utils/types';
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { Suspense } from 'react';
-import { FaPlus } from 'react-icons/fa';
 
 const MyRooms = async () => {
 

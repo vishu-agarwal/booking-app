@@ -1,13 +1,17 @@
 "use server";
 
-import { createSessionClient } from "@/config/appwrite";
-import { SessionResponse } from "@/utils/types";
-import { ID } from "node-appwrite";
-import { checkAuth } from "./checkAuth";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
+
+import { ID } from "node-appwrite";
+
+import { createSessionClient } from "@/config/appwrite";
+
+import { checkAuth } from "./checkAuth";
 import checkRoomAvailability from "./checkRoomAvailability";
+
+import { SessionResponse } from "@/utils/types";
 
 export async function bookRoom(data: FormData): Promise<SessionResponse> {
 

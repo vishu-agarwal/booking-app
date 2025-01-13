@@ -1,5 +1,7 @@
 import React from "react";
+
 import Link from "next/link";
+
 import { NavItemType } from "@/utils/types";
 
 const NavItem: React.FC<NavItemType> = ({ href, label, icon: Icon, handleLogout }) => {

@@ -1,14 +1,18 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 import { FaSignInAlt } from "react-icons/fa";
-import Heading from "@/components/Heading";
-import { createSession } from "../actions/createSession";
 import { toast } from "react-toastify";
+
+import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useAuth } from "@/context/authContext";
+
+import Heading from "@/components/Heading";
 import RoomBookingLoader from "@/components/RoomBookingLoader";
+
+import { useAuth } from "@/context/authContext";
+
+import { createSession } from "../actions/createSession";
 
 const Login = () => {
   const router = useRouter();

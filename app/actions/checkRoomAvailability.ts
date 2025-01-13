@@ -1,9 +1,13 @@
-import { createSessionClient } from "@/config/appwrite";
-import { toUTCDateTime } from "@/utils/helpers";
-import { DateTime } from "luxon";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+
 import { Query } from "node-appwrite";
+
+import { DateTime } from "luxon";
+
+import { createSessionClient } from "@/config/appwrite";
+
+import { toUTCDateTime } from "@/utils/helpers";
 
 function dateOverlap(checkInA: DateTime, checkInB: DateTime, checkOutA: DateTime, checkOutB: DateTime) {
     return checkInA < checkOutB && checkOutA > checkInB;

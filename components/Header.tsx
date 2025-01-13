@@ -1,18 +1,22 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-
+import { toast } from "react-toastify";
 import { FaHome, FaClipboardList, FaPlus, FaSignInAlt, FaUserPlus, FaDoorOpen, FaList, FaSignOutAlt } from "react-icons/fa";
 
-import logo from '@/assets/images/logo.webp';
-import NavItem from "./NavItem";
-import { NavItemType } from "@/utils/types";
+import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { destroySession } from "@/app/actions/destroySession";
-import { toast } from "react-toastify";
+
+import NavItem from "./NavItem";
+
 import { useAuth } from "@/context/authContext";
+
+import { destroySession } from "@/app/actions/destroySession";
+
+import { NavItemType } from "@/utils/types";
+
+import logo from '@/assets/images/logo.webp';
 
 interface HeaderProps {
   title?: string;

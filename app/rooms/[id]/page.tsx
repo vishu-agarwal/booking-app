@@ -1,13 +1,16 @@
 import { FC, Suspense } from "react";
-import Image from "next/image";
-import Heading from "@/components/Heading";
-import BookingForm from "@/components/BookingForm";
-import getSingleRooms from "@/app/actions/getSingleRoom";
-import Link from "next/link";
-import RoomBookingLoader from "@/components/RoomBookingLoader";
 import { FaArrowLeft } from "react-icons/fa";
-import ImageGallery from "@/components/ImageGallery";
+
+import Link from "next/link";
+import Image from "next/image";
+
+import Heading from "@/components/Heading";
 import BackButton from "./_component/BackButton";
+import BookingForm from "@/components/BookingForm";
+import ImageGallery from "@/components/ImageGallery";
+import RoomBookingLoader from "@/components/RoomBookingLoader";
+
+import getSingleRooms from "@/app/actions/getSingleRoom";
 
 type tParams = Promise<{ id: string }>;
 interface IViewRoomProps {

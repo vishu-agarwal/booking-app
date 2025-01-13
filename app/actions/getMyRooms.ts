@@ -1,7 +1,9 @@
-import { createSessionClient } from "@/config/appwrite";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+
 import { Query } from "node-appwrite";
+
+import { createSessionClient } from "@/config/appwrite";
 
 async function getMyRooms() {
     // Retrieve the cookies instance

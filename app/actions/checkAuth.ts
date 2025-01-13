@@ -1,8 +1,10 @@
 "use server";
 
-import { createSessionClient } from "@/config/appwrite";
-import { SessionResponse } from "@/utils/types";
 import { cookies } from "next/headers";
+
+import { createSessionClient } from "@/config/appwrite";
+
+import { SessionResponse } from "@/utils/types";
 
 export async function checkAuth(): Promise<SessionResponse> {
 

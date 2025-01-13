@@ -1,12 +1,16 @@
 import React, { Suspense } from "react";
-import RoomCards from "@/components/RoomCards";
-import Heading from "@/components/Heading";
-import { RoomsType } from "@/utils/types";
-import getAllRooms from "../actions/getAllRooms";
-import RoomBookingLoader from "@/components/RoomBookingLoader";
-import Image from "next/image";
-import Link from "next/link";
 import { FaPlus } from "react-icons/fa";
+
+import Link from "next/link";
+import Image from "next/image";
+
+import Heading from "@/components/Heading";
+import RoomCards from "@/components/RoomCards";
+import RoomBookingLoader from "@/components/RoomBookingLoader";
+
+import getAllRooms from "../actions/getAllRooms";
+
+import { RoomsType } from "@/utils/types";
 
 export default async function Rooms() {
 

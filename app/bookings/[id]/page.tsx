@@ -1,12 +1,16 @@
-import Image from "next/image";
 import { FC } from "react";
-import Link from "next/link";
-import { DeleteRoomButton } from "@/components/DeleteRoomButton";
-import getBookedRoom from "@/app/actions/getRoomBooking";
-import Heading from "@/components/Heading";
-import { formateDate } from "@/utils/helpers";
 import { FaArrowLeft } from "react-icons/fa";
+
+import Link from "next/link";
+import Image from "next/image";
+
+import Heading from "@/components/Heading";
 import ImageGallery from "@/components/ImageGallery";
+import { DeleteRoomButton } from "@/components/DeleteRoomButton";
+
+import getBookedRoom from "@/app/actions/getRoomBooking";
+
+import { formateDate } from "@/utils/helpers";
 
 type tParams = Promise<{ id: string }>;
 interface IViewBookingPageProps {

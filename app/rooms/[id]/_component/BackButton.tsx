@@ -1,9 +1,9 @@
 'use client';
 
 import React from 'react'
-import { useRouter } from 'next/navigation';
-
 import { FaArrowLeft } from 'react-icons/fa';
+
+import { useRouter } from 'next/navigation';
 
 const BackButton = () => {
     const router = useRouter()

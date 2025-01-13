@@ -1,9 +1,11 @@
 import { FC } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
 
-import { RoomsType } from "@/utils/types";
 import { DeleteRoomButton } from "./DeleteRoomButton";
+
+import { RoomsType } from "@/utils/types";
 
 interface IMyRoomCardProps {
     room: RoomsType;

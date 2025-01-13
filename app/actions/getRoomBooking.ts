@@ -1,6 +1,7 @@
-import { createAdminClient } from "@/config/appwrite";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+
+import { createAdminClient } from "@/config/appwrite";
 
 async function getBookedRoom(id: string) {
    const cookiesInstance = await cookies();

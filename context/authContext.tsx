@@ -1,7 +1,11 @@
-import { checkAuth } from "@/app/actions/checkAuth";
-import RoomBookingLoader from "@/components/RoomBookingLoader";
-import { User } from "@/utils/types";
 import { createContext, ReactNode, Suspense, useContext, useEffect, useState } from "react";
+
+import RoomBookingLoader from "@/components/RoomBookingLoader";
+
+import { checkAuth } from "@/app/actions/checkAuth";
+
+import { User } from "@/utils/types";
+
 interface AuthContextType {
     isAuthenticated: boolean;
     currentUser: User;

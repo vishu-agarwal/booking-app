@@ -1,7 +1,8 @@
-import { createSessionClient } from "@/config/appwrite";
+import { Query } from "node-appwrite";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { Query } from "node-appwrite";
+
+import { createSessionClient } from "@/config/appwrite";
 
 async function getMyBookings() {
     // Retrieve the cookies instance

@@ -1,13 +1,16 @@
 'use client';
 
-import Heading from "@/components/Heading";
-import Link from "next/link";
 import React, {  useState } from "react";
 import { FaUserPlus } from "react-icons/fa";
 import { toast } from "react-toastify";
-import { createUser } from "../actions/createUser";
+
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+
+import Heading from "@/components/Heading";
 import RoomBookingLoader from "@/components/RoomBookingLoader";
+
+import { createUser } from "../actions/createUser";
 
 const Register = () => {
 

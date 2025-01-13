@@ -1,14 +1,17 @@
 'use client';
 
-import Heading from "@/components/Heading";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { FaPlusCircle } from "react-icons/fa";
-import { useRouter } from "next/navigation";
 import { BsCloudUpload } from "react-icons/bs";
-import { createRoom } from "@/app/actions/createRooms";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
+import Heading from "@/components/Heading";
 import RoomBookingLoader from "@/components/RoomBookingLoader";
+
+import { createRoom } from "@/app/actions/createRooms";
 
 const AddRoom = () => {
     const router = useRouter();

@@ -1,8 +1,10 @@
 "use server";
 
-import { createAdminClient } from "@/config/appwrite";
-import {  SessionResponse } from "@/utils/types";
 import { ID } from "node-appwrite";
+
+import { createAdminClient } from "@/config/appwrite";
+
+import {  SessionResponse } from "@/utils/types";
 
 export async function createUser(data: FormData): Promise<SessionResponse> {
   // Ensure data is of type FormData

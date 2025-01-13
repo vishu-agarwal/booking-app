@@ -1,9 +1,12 @@
 "use server";
 
-import { createAdminClient } from "@/config/appwrite";
-import { SessionResponse } from "@/utils/types";
 import { ID } from "node-appwrite";
+
 import { checkAuth } from "./checkAuth";
+
+import { createAdminClient } from "@/config/appwrite";
+
+import { SessionResponse } from "@/utils/types";
 
 export async function createRoom(data: FormData): Promise<SessionResponse> {
     if (!(data instanceof FormData)) {

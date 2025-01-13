@@ -1,8 +1,10 @@
-import Carousel from "@/components/Carousel";
-import ChatWithUs from "@/components/ChatWithUs";
-import Link from "next/link";
 import React from "react";
 import { FaCheckCircle, FaRegClock, FaBuilding } from "react-icons/fa";
+
+import Link from "next/link";
+
+import Carousel from "@/components/Carousel";
+import ChatWithUs from "@/components/ChatWithUs";
 
 const DashboardPage: React.FC = () => {
   return (

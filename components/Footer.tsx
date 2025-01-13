@@ -1,6 +1,8 @@
 import React from "react";
-import Link from "next/link";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+
+import Link from "next/link";
+
 import { NavItemType } from "@/utils/types";
 
 const navItems: NavItemType[] = [

@@ -1,8 +1,10 @@
 "use server";
 
-import { createAdminClient } from "@/config/appwrite";
-import { SessionResponse } from "@/utils/types";
 import { cookies } from "next/headers";
+
+import { createAdminClient } from "@/config/appwrite";
+
+import { SessionResponse } from "@/utils/types";
 
 export async function createSession(data: FormData): Promise<SessionResponse> {
   // Ensure data is of type FormData

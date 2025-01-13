@@ -1,12 +1,16 @@
 'use client'
 
-import { deleteRoom } from "@/app/actions/deleteRooms";
 import { FC, useState } from "react";
 import { toast } from "react-toastify";
-import DeleteModal from "./DeleteModal";
-import { cancelRoomBooking } from "@/app/actions/cancelRoomBooking";
+
 import { redirect } from "next/navigation";
+
+import DeleteModal from "./DeleteModal";
+
 import { useAuth } from "@/context/authContext";
+
+import { deleteRoom } from "@/app/actions/deleteRooms";
+import { cancelRoomBooking } from "@/app/actions/cancelRoomBooking";
 
 interface IDeleteRoomButtonProps {
     id: string;

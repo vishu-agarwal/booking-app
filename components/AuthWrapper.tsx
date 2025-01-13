@@ -1,7 +1,8 @@
 'use client';
 
-import { AuthProvider } from "@/context/authContext";
 import { FC, ReactNode } from "react";
+
+import { AuthProvider } from "@/context/authContext";
 interface IAuthWrapperProps {
     children: ReactNode;
 };

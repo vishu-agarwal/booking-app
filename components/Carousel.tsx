@@ -1,6 +1,8 @@
 'use client'
-import Image from "next/image";
+
 import { useEffect, useState } from "react";
+
+import Image from "next/image";
 
 const Carousel: React.FC = () => {
     const [currentImage, setCurrentImage] = useState(0);
